@@ -1,0 +1,32 @@
+# Original 7-bit sequence
+original = [1, 1, -1, 1, -1, -1, -1]
+n = len(original)
+
+print(f"Original Sequence: {original}")
+
+try:
+    # Ask how many bits should be errored
+    num_errors = int(input(f"Enter number of errors (0 to {n}): "))
+
+    if 0 <= num_errors <= n:
+        # Create a test sequence
+        # Flip the first 'num_errors' bits by multiplying by -1
+        test_sequence = []
+        for i in range(n):
+            bit = original[i]
+            if i < num_errors:
+                test_sequence.append(bit * -1) # Flip this bit
+            else:
+                test_sequence.append(bit)      # Keep original bit
+        
+        # Calculate product and sum
+        correlation_sum = sum(a * b for a, b in zip(original, test_sequence))
+
+        print(f"\nSequence with {num_errors} error(s): {test_sequence}")
+        print("-" * 40)
+        print(f"Correlation Sum: {correlation_sum}")
+    else:
+        print(f"Please enter a number between 0 and {n}.")
+
+except ValueError:
+    print("Invalid input. Please enter a whole number.")
