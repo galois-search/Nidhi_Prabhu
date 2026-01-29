@@ -1,0 +1,40 @@
+def circuit_logic():
+    # 1. Get user inputs
+    user_input = input("Enter three digits (e.g., 110): ")
+    if len(user_input) != 3:
+        print("Error: Please enter exactly 3 digits.")
+        return
+    
+    try:
+        num_iterations = int(input("How many iterations would you like to run? "))
+    except ValueError:
+        print("Error: Please enter a valid number for iterations.")
+        return
+
+    # 2. Reverse the input for initial state
+    # Example: '110' -> x=0, y=1, z=1
+    digits = [int(d) for d in user_input]
+    x, y, z = digits[::-1]
+    
+    results = []
+
+    # 3. Iterative Logic with Modulo 4 (Calculations hidden)
+    for i in range(num_iterations):
+        # Equation: 2x + 3y + z
+        raw_val = (2 * x) + (3 * y) + z
+        
+        # Apply Modulo 4
+        b = raw_val % 4
+        results.append(str(b))
+        
+        # Update sequence for next iteration
+        z = y
+        y = x
+        x = b
+
+    # 4. Final Output: Only the original input + calculated results
+    final_sequence = user_input + "".join(results)
+    print(final_sequence)
+
+if __name__ == "__main__":
+    circuit_logic()
