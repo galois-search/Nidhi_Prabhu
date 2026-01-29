@@ -1,0 +1,52 @@
+def simplify_complex_powers(powers):
+    # i^0 = 1, i^1 = i, i^2 = -1, i^3 = -i
+    # We use a dictionary to store the count of each result
+    results = {"real": 0, "imaginary": 0}
+
+    for p in powers:
+        remainder = p % 4
+        if remainder == 0:   # i^0 = 1
+            results["real"] += 1
+        elif remainder == 1: # i^1 = i
+            results["imaginary"] += 1
+        elif remainder == 2: # i^2 = -1
+            results["real"] -= 1
+        elif remainder == 3: # i^3 = -i
+            results["imaginary"] -= 1
+            
+    # Formatting the output
+    r = results["real"]
+    im = results["imaginary"]
+    
+    output = []
+    if r != 0:
+        output.append(f"{r}")
+    if im != 0:
+        output.append(f"{im}i")
+        
+    return " + ".join(output) if output else "0"
+
+def main():
+    print("--- Complex Power Simplifier ---")
+    choice = input("Enter mode (1 for direct powers, 2 for power subtraction): ")
+
+    if choice == '1':
+        # Input 1100 -> [1, 1, 0, 0]
+        val = input("Enter your sequence of powers (e.g., 1100): ")
+        powers = [int(digit) for digit in val]
+        
+    elif choice == '2':
+        # Input i^p1 - i^p2 -> (p1 - p2) % 4
+        p1 = int(input("Enter first power (p1): "))
+        p2 = int(input("Enter second power (p2): "))
+        powers = [p1 - p2]
+        
+    else:
+        print("Invalid choice.")
+        return
+
+    result = simplify_complex_powers(powers)
+    print(f"\nFinal Result: {result}")
+
+if __name__ == "__main__":
+    main()
