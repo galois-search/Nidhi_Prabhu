@@ -1,0 +1,44 @@
+def compute_circuit_output():
+    # 1. Get Degree and Coefficients
+    degree = int(input("Enter the polynomial degree: "))
+    coeffs = []
+    print(f"Enter coefficients for x^{degree} down to x^0:")
+    for i in range(degree, -1, -1):
+        coeffs.append(int(input(f"Coefficient for x^{i}: ")))
+
+    # 2. Formulate the Logic (x^n = RHS)
+    # Move everything but the first term to the right (multiply by -1) and mod 4
+    feedback_weights = []
+    for i in range(1, len(coeffs)):
+        power = degree - i
+        weight = (-coeffs[i]) % 4  # Applying mod 4 to keep it positive
+        feedback_weights.append((power, weight))
+
+    # Display Logic
+    logic_str = " + ".join([f"{w}x^{p}" for p, w in feedback_weights if w != 0])
+    print(f"\nCircuit Logic: x^{degree} = ({logic_str}) mod 4")
+
+    # 3. Get Initial Values (Substituting values for x^{n-1}, x^{n-2}...)
+    # If degree is 3, user gives 120 -> x^2=1, x^1=2, x^0=0
+    initial_val = input(f"Enter {degree} values for the circuit (e.g., '120'): ")
+    state = [int(d) for d in initial_val]
+
+    # 4. Direct Computation (Substitution)
+    # Multiply weight by the corresponding input value
+    rhs_sum = 0
+    for i in range(len(feedback_weights)):
+        weight = feedback_weights[i][1]
+        val = state[i]
+        rhs_sum += weight * val
+
+    final_val = rhs_sum % 4
+
+    # 5. Map to i powers
+    # i^0=1, i^1=i, i^2=-1, i^3=-i
+    complex_map = {0: "1", 1: "i", 2: "-1", 3: "-i"}
+    
+    print(f"\nResult for x^{degree}: {final_val}")
+    print(f"Complex result: {complex_map[final_val]}")
+
+if __name__ == "__main__":
+    compute_circuit_output()
