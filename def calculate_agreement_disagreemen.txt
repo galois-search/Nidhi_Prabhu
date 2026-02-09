@@ -1,0 +1,176 @@
+def calculate_agreement_disagreement(seq1, seq2):
+    """Calculate agreement and disagreement between two sequences"""
+    agreement = sum(1 for x, y in zip(seq1, seq2) if x == y)
+    disagreement = len(seq1) - agreement
+    return agreement, disagreement
+
+
+def auto_correlation(seq):
+    """Calculate auto-correlation for a sequence"""
+    original_seq = seq
+    results = []
+
+    shift = 0
+    while True:
+        shifted_seq = seq[shift:] + seq[:shift]  # Circular shift
+        agreement, disagreement = calculate_agreement_disagreement(original_seq, shifted_seq)
+        result = agreement - disagreement
+        results.append((shift, shifted_seq, agreement, disagreement, result))
+
+        if shifted_seq == original_seq:
+            break
+
+        shift += 1
+
+    return results
+
+
+def cross_correlation(seq1, seq2):
+    """Calculate cross-correlation between two sequences"""
+    results = []
+
+    shift = 0
+    while True:
+        shifted_seq2 = seq2[shift:] + seq2[:shift]  # Circular shift
+        agreement, disagreement = calculate_agreement_disagreement(seq1, shifted_seq2)
+        result = agreement - disagreement
+        results.append((shift, shifted_seq2, agreement, disagreement, result))
+
+        if shifted_seq2 == seq2:
+            break
+
+        shift += 1
+
+    return results
+
+
+# ---------------- Step 1: Ask polynomial degree ----------------
+degree = int(input("Enter the degree of the polynomial: "))
+
+
+# ---------------- Step 2: Generate generic polynomial ----------------
+generic_coeffs = [1] * (degree + 1)
+
+
+def polynomial_to_string(coeffs):
+    deg = len(coeffs) - 1
+    terms = []
+    for i, c in enumerate(coeffs):
+        power = deg - i
+        if c == 0:
+            continue
+        if power == 0:
+            terms.append(str(c))
+        elif power == 1:
+            terms.append("x")
+        else:
+            terms.append(f"x^{power}")
+    return " + ".join(terms)
+
+
+print("Generic polynomial:", polynomial_to_string(generic_coeffs))
+
+
+# ---------------- Step 3: Ask user for actual coefficients ----------------
+user_input = input(f"Enter {degree+1} coefficients (highest degree first, no spaces): ")
+actual_coeffs = list(map(int, user_input))
+print("Actual polynomial:", polynomial_to_string(actual_coeffs))
+
+
+# ---------------- Step 4: Calculate d' ----------------
+d_prime = 2**degree + 1
+print(f"Calculated d' (number of states): {d_prime}")
+
+
+# ---------------- Step 5: Ask for initial states of all possible states ----------------
+initial_states = []
+print(f"\nPlease enter the initial states ({degree} digits) for all {d_prime} states:")
+
+for i in range(d_prime):
+    state_input = input(f"State {i+1} ({degree} digits): ")
+    while len(state_input) != degree or not state_input.isdigit():
+        print("Invalid input! Please enter exactly", degree, "digits.")
+        state_input = input(f"State {i+1} ({degree} digits): ")
+    initial_states.append([int(x) for x in state_input])
+
+
+# ---------------- Step 6: Form LHS-RHS equation ----------------
+lhs_degree = degree
+rhs_coeffs = actual_coeffs[1:]
+
+
+# ---------------- Step 7: Convert RHS to mod-4 ----------------
+mod = 4
+rhs_mod_coeffs = [(-c) % mod for c in rhs_coeffs]
+
+
+def mod_polynomial_string(coeffs, degree):
+    terms = []
+    power = degree - 1
+    for c in coeffs:
+        if c != 0:
+            if power == 0:
+                terms.append(f"{c}")
+            elif power == 1:
+                terms.append(f"{c}x")
+            else:
+                terms.append(f"{c}x^{power}")
+        power -= 1
+    return " + ".join(terms)
+
+
+print(f"Feedback equation (mod-{mod}): x^{degree} = {mod_polynomial_string(rhs_mod_coeffs, degree)}\n")
+
+
+# ---------------- Step 8: Ask for the number of iterations ----------------
+iterations = int(input("Enter the number of iterations for each state: "))
+
+
+# ---------------- Step 9: Iterative LFSR with first-time reverse ----------------
+final_outputs = []
+
+for state in initial_states:
+    state = state[::-1]
+
+    feedback_list = []
+
+    for step in range(iterations):
+        feedback = 0
+        for i in range(len(rhs_mod_coeffs)):
+            feedback += rhs_mod_coeffs[i] * state[i]
+        feedback %= mod
+
+        feedback_list.append(feedback)
+
+        state = [feedback] + state[:-1]
+
+    feedback_str = ''.join(str(f) for f in feedback_list)
+    final_output = ''.join(str(d) for d in state[::-1]) + feedback_str
+    final_outputs.append(final_output)
+
+
+# ---------------- Step 11: Correlation Calculations ----------------
+print("\nCorrelation results:")
+
+for i, final_output in enumerate(final_outputs):
+    print(f"\nFor final output {final_output}:")
+
+    auto_corr_results = auto_correlation(final_output)
+    print("\nAuto-correlation results:")
+    for shift, shifted_seq, agreement, disagreement, corr_result in auto_corr_results:
+        print(
+            f"Shift {shift}: {shifted_seq} => "
+            f"Agreement: {agreement}, Disagreement: {disagreement} "
+            f"-> {agreement}-{disagreement} = {corr_result}"
+        )
+
+    for j, other_final_output in enumerate(final_outputs):
+        if i != j:
+            print(f"\nCross-correlation between {final_output} and {other_final_output}:")
+            cross_corr_results = cross_correlation(final_output, other_final_output)
+            for shift, shifted_seq, agreement, disagreement, corr_result in cross_corr_results:
+                print(
+                    f"Shift {shift}: {shifted_seq} => "
+                    f"Agreement: {agreement}, Disagreement: {disagreement} "
+                    f"-> {agreement}-{disagreement} = {corr_result}"
+                )
