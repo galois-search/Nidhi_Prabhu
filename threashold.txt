@@ -1,0 +1,115 @@
+def calculate_agreement_disagreement(seq1, seq2):
+    """Calculate agreement and disagreement between two sequences"""
+    agreement = sum(1 for x, y in zip(seq1, seq2) if x == y)
+    disagreement = len(seq1) - agreement
+    return agreement - disagreement  # directly return result
+
+def auto_correlation(seq, seq_name):
+    """Calculate auto-correlation for a single sequence and its peak"""
+    length = len(seq)
+    results = []
+
+    print(f"\nAuto-correlation for {seq_name}:")
+    for shift in range(length):
+        shifted_seq = seq[shift:] + seq[:shift]  # Circular shift
+        result = calculate_agreement_disagreement(seq, shifted_seq)
+        results.append(result)
+        print(f"Shift {shift}: {shifted_seq} -> Result: {result}")
+
+    # Peak ignoring shift 0
+    peak = max(abs(r) for r in results[1:])
+    print(f"Peak={peak}")
+    return peak
+
+def cross_correlation(seq1, seq2, name1, name2):
+    """Calculate cross-correlation between two sequences and its peak"""
+    length = len(seq1)
+    results = []
+
+    print(f"\nCross-correlation between {name1} and {name2}:")
+    for shift in range(length):
+        shifted_seq2 = seq2[shift:] + seq2[:shift]  # Circular shift
+        result = calculate_agreement_disagreement(seq1, shifted_seq2)
+        results.append(result)
+        print(f"Shift {shift}: {shifted_seq2} -> Result: {result}")
+
+    # Peak ignoring shift 0
+    peak = max(abs(r) for r in results[1:])
+    print(f"Peak={peak}")
+    return peak
+
+def ask_auto_corr_threshold():
+    """Ask the user for a threshold condition for auto-correlation"""
+    condition = input(f"\nEnter threshold condition for auto-correlation: ").strip()
+    print(f"Threshold condition for auto-correlation entered: {condition}")
+    return condition
+
+def ask_cross_corr_threshold():
+    """Ask the user for a threshold condition for cross-correlation"""
+    condition = input(f"\nEnter threshold condition for cross-correlation: ").strip()
+    print(f"Threshold condition for cross-correlation entered: {condition}")
+    return condition
+
+def parse_condition(condition):
+    """Parse the threshold condition and return the operator and number"""
+    if condition.startswith('='):
+        return '=', int(condition[1:])
+    elif condition.startswith('<'):
+        return '<', int(condition[1:])
+    elif condition.startswith('>'):
+        return '>', int(condition[1:])
+    else:
+        raise ValueError("Invalid condition format")
+
+def compare_threshold(value, condition):
+    """Compare the value with the threshold condition"""
+    operator, threshold = parse_condition(condition)
+    
+    if operator == '=':
+        return value == threshold
+    elif operator == '<':
+        return value < threshold
+    elif operator == '>':
+        return value > threshold
+    return False
+
+def main():
+    n = int(input("Enter num of seq: "))
+    sequences = []
+    auto_corr_peaks = []
+    cross_corr_peaks = []
+
+    # Input sequences
+    for i in range(1, n + 1):
+        seq = input(f"Enter s{i}: ")
+        sequences.append(seq)
+
+    # Auto-correlation for each sequence
+    for idx, seq in enumerate(sequences):
+        peak = auto_correlation(seq, f"s{idx+1}")
+        auto_corr_peaks.append((f"s{idx+1}", peak))
+
+    # Cross-correlation for all unique pairs
+    for i in range(n):
+        for j in range(i + 1, n):
+            peak = cross_correlation(sequences[i], sequences[j], f"s{i+1}", f"s{j+1}")
+            cross_corr_peaks.append((f"s{i+1}-{j+1}", peak))
+
+    # Ask for threshold conditions
+    auto_corr_threshold = ask_auto_corr_threshold()  # For auto-correlation
+    cross_corr_threshold = ask_cross_corr_threshold()  # For cross-correlation
+
+    # Output the results that satisfy the threshold for auto-correlation
+    print("\nAuto-correlation results satisfying the threshold:")
+    for seq_name, peak in auto_corr_peaks:
+        if compare_threshold(peak, auto_corr_threshold):
+            print(f"Auto-correlation: [{seq_name}]")
+
+    # Output the results that satisfy the threshold for cross-correlation
+    print("\nCross-correlation results satisfying the threshold:")
+    for seq_names, peak in cross_corr_peaks:
+        if compare_threshold(peak, cross_corr_threshold):
+            print(f"Cross-correlation: [{seq_names}]")
+
+if __name__ == "__main__":
+    main()
