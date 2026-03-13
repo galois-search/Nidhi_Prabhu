@@ -1,0 +1,32 @@
+import re
+
+# Step 1: Read input file
+file_path = r"C:\Users\Dileep D\Desktop\input1.txt.txt" # your input file
+output_path = r"C:\Users\Dileep D\Desktop\op.txt"    # output file
+
+pairs = []
+
+with open(file_path, "r") as f:
+    for line in f:
+        # Extract sequence numbers
+        seq_match = re.search(r"Sequence (\d+) vs Sequence (\d+)", line)
+        # Extract magnitude
+        mag_match = re.search(r"Peak cross-correlation magnitude:\s*([0-9.]+)", line)
+        if seq_match and mag_match:
+            a = int(seq_match.group(1))
+            b = int(seq_match.group(2))
+            mag = float(mag_match.group(1))
+            pairs.append((a, b, mag))
+
+# Step 2: Ask user for threshold
+threshold = float(input("Enter threshold: "))
+
+# Step 3: Filter and save pairs <= threshold
+with open(output_path, "w") as f:
+    for a, b, mag in pairs:
+        if mag <= threshold:
+            line = f"Sequence {a} vs Sequence {b} | magnitude={mag}"
+            print(line)       # print to console
+            f.write(line + "\n")  # save to file
+
+print(f"\nFiltered pairs saved to {output_path}")
