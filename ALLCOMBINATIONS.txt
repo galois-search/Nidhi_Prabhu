@@ -1,0 +1,25 @@
+import itertools
+
+# --- User Input Section ---
+print("--- Set Mapping Generator ---")
+
+# Asking user for domain (e.g., 1, 2, 3, 4)
+domain_input = input("Enter domain elements separated by spaces: ")
+domain = domain_input.split()
+
+# Asking user for codomain (e.g., 0, 1)
+codomain_input = input("Enter codomain elements separated by spaces: ")
+codomain = codomain_input.split()
+
+# --- Calculation ---
+# Generate all possible mappings (codomain^domain)
+all_mappings = list(itertools.product(codomain, repeat=len(domain)))
+
+print(f"\nTotal possible mappings: {len(all_mappings)}")
+print("-" * 30)
+
+# --- Display Results ---
+for i, output in enumerate(all_mappings, 1):
+    # Zip pairs the domain keys with the current combination of outputs
+    mapping_dict = dict(zip(domain, output))
+    print(f"Map {i:02}: {mapping_dict}")

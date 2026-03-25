@@ -1,0 +1,61 @@
+from itertools import product
+
+# ---------------- Step 1: Ask polynomial degree ----------------
+degree = int(input("Enter the degree of the polynomial: "))
+
+# ---------------- Step 2: Ask user for actual coefficients ----------------
+user_input = input(f"Enter {degree+1} coefficients (highest degree first, separated by spaces): ")
+actual_coeffs = list(map(int, user_input.split()))
+
+# ---------------- Step 3: Form mod-4 feedback coefficients ----------------
+mod = 4
+rhs_coeffs = actual_coeffs[1:]           # RHS = all except highest degree term
+rhs_mod_coeffs = [(-c) % mod for c in rhs_coeffs]  # Feedback coefficients mod 4
+
+# ---------------- Step 4: Display polynomial ----------------
+def polynomial_to_string(coeffs):
+    deg = len(coeffs) - 1
+    terms = []
+    for i, c in enumerate(coeffs):
+        power = deg - i
+        if c == 0:
+            continue
+        if power == 0:
+            terms.append(str(c))
+        elif power == 1:
+            terms.append(f"{c}x" if c != 1 else "x")
+        else:
+            terms.append(f"{c}x^{power}" if c != 1 else f"x^{power}")
+    return " + ".join(terms)
+
+print("\nPolynomial:", polynomial_to_string(actual_coeffs))
+print(f"Feedback equation (mod-{mod}): x^{degree} = ", end="")
+print(" + ".join(f"{c}x^{degree-i-1}" if degree-i-1>1 else (f"{c}x" if degree-i-1==1 else f"{c}") 
+                 for i, c in enumerate(rhs_mod_coeffs) if c != 0))
+print()
+
+# ---------------- Step 5: Generate all possible initial states ----------------
+all_states = product(range(mod), repeat=degree)
+
+# ---------------- Step 6: Simulate LFSR for each initial state ----------------
+for state_tuple in all_states:
+    original_state = list(state_tuple)
+    state = original_state[::-1]  # Reverse for first iteration
+    seen_states = []
+    feedback_sequence = []
+
+    while tuple(state) not in seen_states:
+        seen_states.append(tuple(state))
+        # Compute feedback
+        feedback = sum(rhs_mod_coeffs[i] * state[i] for i in range(len(rhs_mod_coeffs))) % mod
+        feedback_sequence.append(feedback)
+        # Shift state
+        state = [feedback] + state[:-1]
+
+    # Calculate period
+    period = len(seen_states)
+
+    # Display results
+    initial_str = ''.join(str(d) for d in original_state)
+    feedback_str = ''.join(str(f) for f in feedback_sequence)
+    print(f"Initial state: {initial_str} | Sequence: {initial_str + feedback_str} | Period: {period}")
