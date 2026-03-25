@@ -1,0 +1,4 @@
+Enter length of sequence: 7
+Enter register size (m): 3
+Enter polynomial coefficients: 1 2 1 3
+Enter number of sequences: 2
