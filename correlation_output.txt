@@ -1,0 +1,2249 @@
+Detected sequence type: z4
+
+AUTO CORRELATION
+
+Sequence 1: 0222020200002002022002222200022
+Auto-correlation → -1 | magnitude=1.0
+Peak auto-correlation magnitude: 1.0
+
+Sequence 2: 2012230310231331022132331232302
+Auto-correlation → -5 + -4i | magnitude=6.4031242374328485
+Peak auto-correlation magnitude: 6.4031242374328485
+
+Sequence 3: 2121222230010312033111220132311
+Auto-correlation → -5 + 4i | magnitude=6.4031242374328485
+Peak auto-correlation magnitude: 6.4031242374328485
+
+Sequence 4: 0223121132121022032210130213113
+Auto-correlation → -5 + 4i | magnitude=6.4031242374328485
+Peak auto-correlation magnitude: 6.4031242374328485
+
+Sequence 5: 0121002012030112031113202130133
+Auto-correlation → 3 + 4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 6: 3110123200232232112011133022112
+Auto-correlation → -5 + 4i | magnitude=6.4031242374328485
+Peak auto-correlation magnitude: 6.4031242374328485
+
+Sequence 7: 2111010322001221033001131320013
+Auto-correlation → 3 + 4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 8: 3220312133232322221003013201133
+Auto-correlation → -5 + -4i | magnitude=6.4031242374328485
+Peak auto-correlation magnitude: 6.4031242374328485
+
+Sequence 9: 3130203101312103200032030312233
+Auto-correlation → 3 + -4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 10: 2301200012010132211131020130313
+Auto-correlation → 3 + 4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 11: 2032110013111020330111030302221
+Auto-correlation → 3 + 4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 12: 3323032020300123100111130023323
+Auto-correlation → 3 + -4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 13: 0232332233113222110313030322201
+Auto-correlation → -5 + -4i | magnitude=6.4031242374328485
+Peak auto-correlation magnitude: 6.4031242374328485
+
+Sequence 14: 1330321200212212332033311022332
+Auto-correlation → -5 + -4i | magnitude=6.4031242374328485
+Peak auto-correlation magnitude: 6.4031242374328485
+
+Sequence 15: 3100011013321230200102123120131
+Auto-correlation → 3 + 4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 16: 3221313300213213103010202300303
+Auto-correlation → 3 + -4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 17: 2133132201123310321000010012110
+Auto-correlation → 3 + 4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 18: 3231021131120211011323212202320
+Auto-correlation → -5 + 4i | magnitude=6.4031242374328485
+Peak auto-correlation magnitude: 6.4031242374328485
+
+Sequence 19: 3203131300033031123210200302321
+Auto-correlation → 3 + -4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 20: 2213333200332313210100221223231
+Auto-correlation → -5 + -4i | magnitude=6.4031242374328485
+Peak auto-correlation magnitude: 6.4031242374328485
+
+Sequence 21: 3302111110003103310121202210230
+Auto-correlation → 3 + 4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 22: 1112301000210210310031133222310
+Auto-correlation → 3 + 4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 23: 2130033331002112111210120201003
+Auto-correlation → 3 + 4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 24: 2130333210300023023013001331122
+Auto-correlation → 3 + -4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 25: 3101012220302121122113312223301
+Auto-correlation → -5 + 4i | magnitude=6.4031242374328485
+Peak auto-correlation magnitude: 6.4031242374328485
+
+Sequence 26: 1112001121312303002232212132231
+Auto-correlation → -5 + 4i | magnitude=6.4031242374328485
+Peak auto-correlation magnitude: 6.4031242374328485
+
+Sequence 27: 1131220332113012300003003233023
+Auto-correlation → 3 + -4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 28: 3020110333010102223201233003133
+Auto-correlation → 3 + -4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 29: 2101102333330001301130323202230
+Auto-correlation → 3 + -4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 30: 3201033201333120231031103230020
+Auto-correlation → 3 + -4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 31: 0031233303012200322301100331312
+Auto-correlation → 3 + -4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 32: 0202100101122313110023123130103
+Auto-correlation → 3 + 4i | magnitude=5.0
+Peak auto-correlation magnitude: 5.0
+
+Sequence 33: 2023303312123220212012130233133
+Auto-correlation → -5 + -4i | magnitude=6.4031242374328485
+Peak auto-correlation magnitude: 6.4031242374328485
+
+CROSS CORRELATION
+
+Sequence 1 vs Sequence 2
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 3
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 4
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 5
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 6
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 7
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 8
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 9
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 1 vs Sequence 10
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 1 vs Sequence 11
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 1 vs Sequence 12
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 1 vs Sequence 13
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 1 vs Sequence 14
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 15
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 1 vs Sequence 16
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 17
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 1 vs Sequence 18
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 19
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 20
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 21
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 22
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 1 vs Sequence 23
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 24
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 25
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 26
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 27
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 28
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 29
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 1 vs Sequence 30
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 31
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 32
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 1 vs Sequence 33
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 3
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 4
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 5
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 6
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 7
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 8
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 9
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 10
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 11
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 12
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 13
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 14
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 15
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 16
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 17
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 18
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 19
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 20
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 21
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 22
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 23
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 24
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 25
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 26
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 27
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 28
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 29
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 30
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 31
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 2 vs Sequence 32
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 2 vs Sequence 33
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 4
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 5
+Shift 0 → -1 | magnitude=1.0
+Peak cross-correlation magnitude: 1.0
+
+Sequence 3 vs Sequence 6
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 7
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 8
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 3 vs Sequence 9
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 3 vs Sequence 10
+Shift 0 → -1 | magnitude=1.0
+Peak cross-correlation magnitude: 1.0
+
+Sequence 3 vs Sequence 11
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 12
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 13
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 14
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 15
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 3 vs Sequence 16
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 17
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 18
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 19
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 20
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 21
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 3 vs Sequence 22
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 23
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 24
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 25
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 26
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 27
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 28
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 29
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 30
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 3 vs Sequence 31
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 3 vs Sequence 32
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 3 vs Sequence 33
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 5
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 6
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 7
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 8
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 9
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 10
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 11
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 12
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 13
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 14
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 15
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 16
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 17
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 18
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 19
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 20
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 21
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 22
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 23
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 24
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 25
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 26
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 27
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 28
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 29
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 30
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 31
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 4 vs Sequence 32
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 4 vs Sequence 33
+Shift 0 → -1 | magnitude=1.0
+Peak cross-correlation magnitude: 1.0
+
+Sequence 5 vs Sequence 6
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 5 vs Sequence 7
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 8
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 9
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 5 vs Sequence 10
+Shift 0 → -1 | magnitude=1.0
+Peak cross-correlation magnitude: 1.0
+
+Sequence 5 vs Sequence 11
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 5 vs Sequence 12
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 13
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 5 vs Sequence 14
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 5 vs Sequence 15
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 16
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 17
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 5 vs Sequence 18
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 19
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 5 vs Sequence 20
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 5 vs Sequence 21
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 22
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 5 vs Sequence 23
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 24
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 25
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 26
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 27
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 28
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 29
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 30
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 31
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 5 vs Sequence 32
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 5 vs Sequence 33
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 7
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 8
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 9
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 10
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 6 vs Sequence 11
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 6 vs Sequence 12
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 13
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 14
+Shift 0 → -1 | magnitude=1.0
+Peak cross-correlation magnitude: 1.0
+
+Sequence 6 vs Sequence 15
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 16
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 17
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 18
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 6 vs Sequence 19
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 20
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 21
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 6 vs Sequence 22
+Shift 0 → -1 | magnitude=1.0
+Peak cross-correlation magnitude: 1.0
+
+Sequence 6 vs Sequence 23
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 24
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 25
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 26
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 6 vs Sequence 27
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 6 vs Sequence 28
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 29
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 6 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 31
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 32
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 6 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 8
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 7 vs Sequence 9
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 7 vs Sequence 10
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 11
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 12
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 13
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 7 vs Sequence 14
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 7 vs Sequence 15
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 16
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 17
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 7 vs Sequence 18
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 7 vs Sequence 19
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 7 vs Sequence 20
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 7 vs Sequence 21
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 7 vs Sequence 22
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 23
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 24
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 25
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 26
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 7 vs Sequence 27
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 28
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 29
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 7 vs Sequence 30
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 31
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 7 vs Sequence 32
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 7 vs Sequence 33
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 9
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 10
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 8 vs Sequence 11
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 8 vs Sequence 12
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 8 vs Sequence 13
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 14
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 15
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 16
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 17
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 18
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 19
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 8 vs Sequence 20
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 21
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 8 vs Sequence 22
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 8 vs Sequence 23
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 24
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 25
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 26
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 8 vs Sequence 27
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 28
+Shift 0 → -1 | magnitude=1.0
+Peak cross-correlation magnitude: 1.0
+
+Sequence 8 vs Sequence 29
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 31
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 8 vs Sequence 32
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 8 vs Sequence 33
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 10
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 11
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 12
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 13
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 14
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 15
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 16
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 17
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 18
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 9 vs Sequence 19
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 9 vs Sequence 20
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 21
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 22
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 23
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 24
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 25
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 9 vs Sequence 26
+Shift 0 → -1 | magnitude=1.0
+Peak cross-correlation magnitude: 1.0
+
+Sequence 9 vs Sequence 27
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 28
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 29
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 31
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 32
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 9 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 11
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 12
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 13
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 10 vs Sequence 14
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 10 vs Sequence 15
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 16
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 10 vs Sequence 17
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 10 vs Sequence 18
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 10 vs Sequence 19
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 10 vs Sequence 20
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 10 vs Sequence 21
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 22
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 23
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 24
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 10 vs Sequence 25
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 10 vs Sequence 26
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 10 vs Sequence 27
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 28
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 29
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 30
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 31
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 32
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 10 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 11 vs Sequence 12
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 11 vs Sequence 13
+Shift 0 → -1 | magnitude=1.0
+Peak cross-correlation magnitude: 1.0
+
+Sequence 11 vs Sequence 14
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 11 vs Sequence 15
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 11 vs Sequence 16
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 11 vs Sequence 17
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 11 vs Sequence 18
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 11 vs Sequence 19
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 11 vs Sequence 20
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 11 vs Sequence 21
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 11 vs Sequence 22
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 11 vs Sequence 23
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 11 vs Sequence 24
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 11 vs Sequence 25
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 11 vs Sequence 26
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 11 vs Sequence 27
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 11 vs Sequence 28
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 11 vs Sequence 29
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 11 vs Sequence 30
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 11 vs Sequence 31
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 11 vs Sequence 32
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 11 vs Sequence 33
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 12 vs Sequence 13
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 12 vs Sequence 14
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 12 vs Sequence 15
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 12 vs Sequence 16
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 12 vs Sequence 17
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 12 vs Sequence 18
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 12 vs Sequence 19
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 12 vs Sequence 20
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 12 vs Sequence 21
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 12 vs Sequence 22
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 12 vs Sequence 23
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 12 vs Sequence 24
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 12 vs Sequence 25
+Shift 0 → -1 | magnitude=1.0
+Peak cross-correlation magnitude: 1.0
+
+Sequence 12 vs Sequence 26
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 12 vs Sequence 27
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 12 vs Sequence 28
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 12 vs Sequence 29
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 12 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 12 vs Sequence 31
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 12 vs Sequence 32
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 12 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 14
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 15
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 13 vs Sequence 16
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 17
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 18
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 19
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 20
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 21
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 13 vs Sequence 22
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 23
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 24
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 25
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 26
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 13 vs Sequence 27
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 28
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 13 vs Sequence 29
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 13 vs Sequence 30
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 13 vs Sequence 31
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 32
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 13 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 14 vs Sequence 15
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 14 vs Sequence 16
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 14 vs Sequence 17
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 14 vs Sequence 18
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 14 vs Sequence 19
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 14 vs Sequence 20
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 14 vs Sequence 21
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 14 vs Sequence 22
+Shift 0 → -1 | magnitude=1.0
+Peak cross-correlation magnitude: 1.0
+
+Sequence 14 vs Sequence 23
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 14 vs Sequence 24
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 14 vs Sequence 25
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 14 vs Sequence 26
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 14 vs Sequence 27
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 14 vs Sequence 28
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 14 vs Sequence 29
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 14 vs Sequence 30
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 14 vs Sequence 31
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 14 vs Sequence 32
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 14 vs Sequence 33
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 15 vs Sequence 16
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 15 vs Sequence 17
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 15 vs Sequence 18
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 15 vs Sequence 19
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 15 vs Sequence 20
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 15 vs Sequence 21
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 15 vs Sequence 22
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 15 vs Sequence 23
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 15 vs Sequence 24
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 15 vs Sequence 25
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 15 vs Sequence 26
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 15 vs Sequence 27
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 15 vs Sequence 28
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 15 vs Sequence 29
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 15 vs Sequence 30
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 15 vs Sequence 31
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 15 vs Sequence 32
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 15 vs Sequence 33
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 17
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 16 vs Sequence 18
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 19
+Shift 0 → -1 | magnitude=1.0
+Peak cross-correlation magnitude: 1.0
+
+Sequence 16 vs Sequence 20
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 21
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 22
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 23
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 24
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 25
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 26
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 16 vs Sequence 27
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 28
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 29
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 16 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 31
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 32
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 16 vs Sequence 33
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 17 vs Sequence 18
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 17 vs Sequence 19
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 17 vs Sequence 20
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 17 vs Sequence 21
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 17 vs Sequence 22
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 17 vs Sequence 23
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 17 vs Sequence 24
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 17 vs Sequence 25
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 17 vs Sequence 26
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 17 vs Sequence 27
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 17 vs Sequence 28
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 17 vs Sequence 29
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 17 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 17 vs Sequence 31
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 17 vs Sequence 32
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 17 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 18 vs Sequence 19
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 18 vs Sequence 20
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 18 vs Sequence 21
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 18 vs Sequence 22
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 18 vs Sequence 23
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 18 vs Sequence 24
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 18 vs Sequence 25
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 18 vs Sequence 26
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 18 vs Sequence 27
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 18 vs Sequence 28
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 18 vs Sequence 29
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 18 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 18 vs Sequence 31
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 18 vs Sequence 32
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 18 vs Sequence 33
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 19 vs Sequence 20
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 19 vs Sequence 21
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 19 vs Sequence 22
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 19 vs Sequence 23
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 19 vs Sequence 24
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 19 vs Sequence 25
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 19 vs Sequence 26
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 19 vs Sequence 27
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 19 vs Sequence 28
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 19 vs Sequence 29
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 19 vs Sequence 30
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 19 vs Sequence 31
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 19 vs Sequence 32
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 19 vs Sequence 33
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 20 vs Sequence 21
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 20 vs Sequence 22
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 20 vs Sequence 23
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 20 vs Sequence 24
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 20 vs Sequence 25
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 20 vs Sequence 26
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 20 vs Sequence 27
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 20 vs Sequence 28
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 20 vs Sequence 29
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 20 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 20 vs Sequence 31
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 20 vs Sequence 32
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 20 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 21 vs Sequence 22
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 21 vs Sequence 23
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 21 vs Sequence 24
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 21 vs Sequence 25
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 21 vs Sequence 26
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 21 vs Sequence 27
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 21 vs Sequence 28
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 21 vs Sequence 29
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 21 vs Sequence 30
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 21 vs Sequence 31
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 21 vs Sequence 32
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 21 vs Sequence 33
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 22 vs Sequence 23
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 22 vs Sequence 24
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 22 vs Sequence 25
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 22 vs Sequence 26
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 22 vs Sequence 27
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 22 vs Sequence 28
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 22 vs Sequence 29
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 22 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 22 vs Sequence 31
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 22 vs Sequence 32
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 22 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 23 vs Sequence 24
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 23 vs Sequence 25
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 23 vs Sequence 26
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 23 vs Sequence 27
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 23 vs Sequence 28
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 23 vs Sequence 29
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 23 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 23 vs Sequence 31
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 23 vs Sequence 32
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 23 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 24 vs Sequence 25
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 24 vs Sequence 26
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 24 vs Sequence 27
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 24 vs Sequence 28
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 24 vs Sequence 29
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 24 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 24 vs Sequence 31
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 24 vs Sequence 32
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 24 vs Sequence 33
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 25 vs Sequence 26
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 25 vs Sequence 27
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 25 vs Sequence 28
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 25 vs Sequence 29
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 25 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 25 vs Sequence 31
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 25 vs Sequence 32
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 25 vs Sequence 33
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 26 vs Sequence 27
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 26 vs Sequence 28
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 26 vs Sequence 29
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 26 vs Sequence 30
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 26 vs Sequence 31
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 26 vs Sequence 32
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 26 vs Sequence 33
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 27 vs Sequence 28
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 27 vs Sequence 29
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 27 vs Sequence 30
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 27 vs Sequence 31
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 27 vs Sequence 32
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 27 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 28 vs Sequence 29
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 28 vs Sequence 30
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 28 vs Sequence 31
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 28 vs Sequence 32
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 28 vs Sequence 33
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 29 vs Sequence 30
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 29 vs Sequence 31
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 29 vs Sequence 32
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 29 vs Sequence 33
+Shift 0 → -5 + 4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 30 vs Sequence 31
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 30 vs Sequence 32
+Shift 0 → 3 + 4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 30 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 31 vs Sequence 32
+Shift 0 → -5 + -4i | magnitude=6.4031242374328485
+Peak cross-correlation magnitude: 6.4031242374328485
+
+Sequence 31 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0
+
+Sequence 32 vs Sequence 33
+Shift 0 → 3 + -4i | magnitude=5.0
+Peak cross-correlation magnitude: 5.0

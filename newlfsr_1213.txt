@@ -1,0 +1,45 @@
+def run_inverted_step0_lfsr():
+    # Coefficients: s_{j+3} = (2*s2 + 3*s1 + 1*s0) mod 4
+    m2, m1, m0 = 2, 3, 1 
+
+    print("Polynomial: 1x^3 + 2x^2 + 1x + 3")
+    print("Feedback Equation: s_{j+3} = (2*s_{j+2} + 3*s_{j+1} + 1*s_{j}) mod 4")
+    print("-" * 55)
+
+    seed_str = input("Enter initial seed (e.g., 322): ")
+    num_steps = int(input("How many steps to perform? "))
+
+    # state[0]=s0, state[1]=s1, state[2]=s2
+    state = [int(d) for d in seed_str] 
+    
+    # This list will store the rightmost bit (s0) of each state
+    sequence_bits = []
+
+    print(f"\n{'Step':<6} | {'State (s2 s1 s0)':<18} | {'Output'}")
+    print("-" * 50)
+
+    for step in range(num_steps + 1):
+        # 1. Get the current state as a string (reversed internal state)
+        current_display = "".join(map(str, state[::-1]))
+        
+        # 2. Extract the rightmost bit (s0) for our final sequence
+        # In our internal list [s0, s1, s2], s0 is at index 0
+        rightmost_bit = state[0]
+        sequence_bits.append(str(rightmost_bit))
+        
+        # 3. Calculate Feedback (the 'd' for the next step)
+        feedback = (m2 * state[2] + m1 * state[1] + m0 * state[0]) % 4
+        
+        # 4. Print Table Row
+        print(f"{step:<6} | {current_display:<18} | {feedback}")
+
+        # 5. Shift the Register
+        state.pop(0)           
+        state.append(feedback) 
+
+    # Final Output
+    print("-" * 50)
+    print(f"Sequence (Rightmost bits): {''.join(sequence_bits)}")
+
+if __name__ == "__main__":
+    run_inverted_step0_lfsr()

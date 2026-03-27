@@ -1,0 +1,113 @@
+LFSR Simulation Output
+Degree: 3
+Sequence length: 7
+Feedback Equation: s_{j+3} = (3*s2 + 2*s1 + 3*s0) mod 4
+
+Iteration 1: Initial seed = (2, 0, 2)
+Step   | State (s2 s1 s0)  
+------------------------------
+0      | 202               
+1      | 020               
+2      | 002               
+3      | 200               
+4      | 220               
+5      | 222               
+6      | 022               
+Sequence (Rightmost bits): 2020022
+
+Iteration 2: Initial seed = (1, 0, 3)
+Step   | State (s2 s1 s0)  
+------------------------------
+0      | 301               
+1      | 030               
+2      | 203               
+3      | 320               
+4      | 132               
+5      | 313               
+6      | 031               
+Sequence (Rightmost bits): 1030231
+
+Iteration 3: Initial seed = (0, 3, 1)
+Step   | State (s2 s1 s0)  
+------------------------------
+0      | 130               
+1      | 113               
+2      | 211               
+3      | 321               
+4      | 032               
+5      | 003               
+6      | 100               
+Sequence (Rightmost bits): 0311230
+
+Iteration 4: Initial seed = (0, 3, 2)
+Step   | State (s2 s1 s0)  
+------------------------------
+0      | 230               
+1      | 023               
+2      | 102               
+3      | 110               
+4      | 111               
+5      | 011               
+6      | 101               
+Sequence (Rightmost bits): 0320111
+
+Iteration 5: Initial seed = (3, 3, 1)
+Step   | State (s2 s1 s0)  
+------------------------------
+0      | 133               
+1      | 213               
+2      | 121               
+3      | 212               
+4      | 221               
+5      | 122               
+6      | 112               
+Sequence (Rightmost bits): 3312122
+
+Iteration 6: Initial seed = (1, 0, 1)
+Step   | State (s2 s1 s0)  
+------------------------------
+0      | 101               
+1      | 210               
+2      | 021               
+3      | 302               
+4      | 330               
+5      | 333               
+6      | 033               
+Sequence (Rightmost bits): 1012033
+
+Iteration 7: Initial seed = (0, 1, 3)
+Step   | State (s2 s1 s0)  
+------------------------------
+0      | 310               
+1      | 331               
+2      | 233               
+3      | 123               
+4      | 012               
+5      | 001               
+6      | 300               
+Sequence (Rightmost bits): 0133210
+
+Iteration 8: Initial seed = (2, 1, 1)
+Step   | State (s2 s1 s0)  
+------------------------------
+0      | 112               
+1      | 311               
+2      | 231               
+3      | 323               
+4      | 232               
+5      | 223               
+6      | 322               
+Sequence (Rightmost bits): 2113232
+
+Iteration 9: Initial seed = (1, 3, 0)
+Step   | State (s2 s1 s0)  
+------------------------------
+0      | 031               
+1      | 103               
+2      | 010               
+3      | 201               
+4      | 120               
+5      | 312               
+6      | 131               
+Sequence (Rightmost bits): 1301021
+
