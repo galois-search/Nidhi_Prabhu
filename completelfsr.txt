@@ -1,0 +1,137 @@
+import random
+import os
+
+
+def read_input(filename):
+    """Robustly reads degree, coefficients, and steps from the file."""
+    if not os.path.exists(filename):
+        print(f"File not found: {filename}")
+        return None, None, None
+
+    with open(filename, 'r') as file:
+        content = [line.strip() for line in file if line.strip()]
+
+    if len(content) < 3:
+        print("Error: Input file must have at least 3 lines.")
+        return None, None, None
+
+    try:
+        degree = int(content[0])
+        # Handles space-separated or combined digits (e.g., '1 0 0 1' or '1001')
+        raw_coeffs = content[1].replace(',', ' ').split()
+        if len(raw_coeffs) == 1 and len(raw_coeffs[0]) > 1:
+            full_coeffs = [int(d) % 4 for d in raw_coeffs[0]]
+        else:
+            full_coeffs = [int(float(c)) % 4 for c in raw_coeffs]
+
+        steps = int(content[2])
+        return degree, full_coeffs, steps
+    except ValueError as e:
+        print(f"Error parsing numbers: {e}")
+        return None, None, None
+
+
+def run_simulation(seed_str, rhs_coeffs, num_steps, global_seen):
+    """
+    Performs LFSR steps.
+    1. Reverses seed for Step 00.
+    2. Uses negative modulo logic: new_digit = (-sum(coeffs * state)) % 4
+    3. Tracks right-most bits for the footer.
+    """
+    initial_list = [int(d) for d in seed_str]
+    # Step 00 is the reversed initial seed
+    current_state = initial_list[::-1]
+
+    history = []
+    right_bits = []
+
+    # Process Step 00
+    state_00 = "".join(map(str, current_state))
+    history.append(state_00)
+    right_bits.append(state_00[-1])
+    global_seen.add(state_00)
+
+    for _ in range(1, num_steps + 1):
+        # Calculate sum of (coeff * state_digit)
+        # Moving terms to RHS results in negative signs: new = -(c1*x1 + c2*x2...)
+        total_sum = sum(rhs_coeffs[i] * current_state[i] for i in range(len(current_state)))
+        new_digit = (-total_sum) % 4
+
+        # Circular Shift: New digit enters index 0, last digit drops
+        current_state = [new_digit] + current_state[:-1]
+
+        state_str = "".join(map(str, current_state))
+        history.append(state_str)
+        right_bits.append(state_str[-1])
+        global_seen.add(state_str)
+
+    return history, "".join(right_bits)
+
+
+def main():
+    # --- Configuration ---
+    input_path = r"D:\Dileep\NIDHI_V02\24input.txt"
+    output_path = r"D:\Dileep\NIDHI_V02\24output.txt"
+
+    # Read parameters from file
+    params = read_input(input_path)
+    if params[0] is None:
+        return
+
+    degree, full_coeffs, steps = params
+
+    # The first coefficient is the degree's coefficient (LHS).
+    # Remaining coefficients are RHS multipliers.
+    rhs_coeffs = full_coeffs[1:]
+
+    # Ensure rhs_coeffs length matches the degree
+    while len(rhs_coeffs) < degree:
+        rhs_coeffs.append(0)
+
+    # Calculate the mathematical limit for unique non-zero states (4^D - 1)
+    max_states = (4 ** degree) - 1
+    print(f"Total possible unique states to find: {max_states}")
+
+    seen_states = set()
+    output_lines = []
+    seed_count = 0
+
+    # Loop until every possible unique state has been used in a sequence
+    while len(seen_states) < max_states:
+        # Generate a random seed
+        seed = "".join(random.choice("0123") for _ in range(degree))
+
+        # Skip if seed is all zeros or has already appeared in a previous step's history
+        if seed == "0" * degree or seed in seen_states:
+            continue
+
+        seed_count += 1
+        seen_states.add(seed)
+
+        # Header format: Seed X:YYYY
+        output_lines.append(f"Seed {seed_count}:{seed}")
+
+        # Run simulation using negative modulo logic
+        step_history, bit_string = run_simulation(seed, rhs_coeffs, steps, seen_states)
+
+        # Step format: Step 00: YYYY
+        for i, state in enumerate(step_history):
+            output_lines.append(f"  Step {i:02d}: {state}")
+
+        # Footer format: right most bit of each step : ...
+        output_lines.append(f"right most bit of each step : {bit_string}")
+        output_lines.append("")  # Blank line separator
+
+    # --- Write Results ---
+    try:
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        with open(output_path, 'w') as f:
+            f.write("\n".join(output_lines))
+        print(f"Success! Processed {seed_count} unique sequence starts.")
+        print(f"All {max_states} states accounted for in: {output_path}")
+    except Exception as e:
+        print(f"File Write Error: {e}")
+
+
+if __name__ == "__main__":
+    main()
