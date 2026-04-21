@@ -1,0 +1,121 @@
+import itertools
+import os
+
+
+def read_input(filename):
+    if not os.path.exists(filename):
+        return None, None, None
+    with open(filename, 'r') as file:
+        content = [line.strip() for line in file if line.strip()]
+    if len(content) < 3:
+        return None, None, None
+    try:
+        degree = int(content[0])
+        raw_coeffs = content[1].replace(',', ' ').split()
+        if len(raw_coeffs) == 1 and len(raw_coeffs[0]) > 1:
+            full_coeffs = [int(d) % 4 for d in raw_coeffs[0]]
+        else:
+            full_coeffs = [int(float(c)) % 4 for c in raw_coeffs]
+        steps = int(content[2])
+        return degree, full_coeffs, steps
+    except ValueError:
+        return None, None, None
+
+
+def is_unit(state_tuple):
+    """Checks if state (tuple of ints) contains at least one 1 or 3."""
+    for x in state_tuple:
+        if x % 2 != 0:
+            return True
+    return False
+
+
+def get_orbit(start_node, rhs_coeffs, max_steps):
+    """
+    Traces the orbit of a seed.
+    Returns the list of states in the cycle and the output bit string.
+    """
+    history = []
+    bit_string = []
+    current = start_node
+
+    # We use a dict to find exactly when and where a state repeats
+    visited_in_run = {}
+
+    for i in range(max_steps):
+        if current in visited_in_run:
+            # Cycle detected!
+            start_index = visited_in_run[current]
+            cycle_states = history[start_index:]
+            cycle_bits = bit_string[start_index:]
+            return cycle_states, "".join(map(str, cycle_bits))
+
+        visited_in_run[current] = i
+        history.append(current)
+        bit_string.append(current[-1])
+
+        # Feedback calculation
+        total_sum = 0
+        for coeff, val in zip(rhs_coeffs, current):
+            total_sum += coeff * val
+        new_digit = (-total_sum) % 4
+
+        # Shift
+        current = (new_digit,) + current[:-1]
+
+    return None, None  # Non-periodic within max_steps
+
+
+def main():
+    input_path = r"D:\Dileep\NIDHI_V02\24input.txt"
+    output_path = r"D:\Dileep\NIDHI_V02\242output.txt"
+
+    degree, full_coeffs, steps = read_input(input_path)
+    if not degree: return
+
+    rhs_coeffs = full_coeffs[1:]
+    while len(rhs_coeffs) < degree:
+        rhs_coeffs.append(0)
+
+    # Use a set of tuples for maximum speed
+    seen_states = set()
+    output_lines = []
+    seed_count = 0
+
+    print(f"--- Starting Degree {degree} Orbit Analysis ---")
+
+    # Iterate through all possible states as tuples
+    for p in itertools.product(range(4), repeat=degree):
+        if p in seen_states:
+            continue
+
+        if not is_unit(p):
+            continue
+
+        # Trace the orbit
+        cycle_states, bit_str = get_orbit(p, rhs_coeffs, steps)
+
+        if cycle_states:
+            seed_count += 1
+            # Mark all states in this cycle as seen
+            seen_states.update(cycle_states)
+
+            primary_seed = "".join(map(str, cycle_states[0]))
+            period = len(cycle_states)
+
+            output_lines.append(f"Orbit #{seed_count} | Seed: {primary_seed} | Period: {period}")
+            output_lines.append(f"Seq: {bit_str[:100]}...")
+            output_lines.append("-" * 30)
+
+            if seed_count % 10 == 0:
+                print(f"Found {seed_count} orbits so far...")
+
+    # Final Save
+    with open(output_path, 'w') as f:
+        f.write(f"Results for Degree {degree}\nTotal Orbits: {seed_count}\n\n")
+        f.write("\n".join(output_lines))
+    print(f"Done. Found {seed_count} unique unit cycles.")
+
+
+if __name__ == "__main__":
+    main()
