@@ -1,0 +1,135 @@
+import itertools
+import math
+
+# ------------------ File Paths ------------------
+input_file = r"D:\Dileep\NIDHI_V02\degree3_sequences_only.txt"  # existing LFSR sequences
+output_file = r"D:\Dileep\NIDHI_V02\correlation_output.txt"
+
+# ------------------ Helper Functions ------------------
+
+# ----- Read sequences for correlation -----
+def read_sequences(filename):
+    sequences = []
+    with open(filename, 'r', encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if line:  # ignore empty lines
+                sequences.append(line)
+    if not sequences:
+        print(f"No sequences found in {filename}.")
+        exit()
+    return sequences
+
+def detect_type(sequences):
+    for seq in sequences:
+        for d in seq:
+            if d not in ['0', '1']:
+                return "z4"
+    return "binary"
+
+# ---------- Binary Correlation ----------
+def binary_correlation(seq1, seq2):
+    agreement = sum(1 for a, b in zip(seq1, seq2) if a == b)
+    disagreement = len(seq1) - agreement
+    return agreement - disagreement
+
+def circular_shift(seq, k):
+    return seq[k:] + seq[:k]
+
+# ---------- Z4 Helpers ----------
+def simplify_complex_powers(powers):
+    results = {"real": 0, "imaginary": 0}
+    for p in powers:
+        remainder = p % 4
+        if remainder == 0:
+            results["real"] += 1
+        elif remainder == 1:
+            results["imaginary"] += 1
+        elif remainder == 2:
+            results["real"] -= 1
+        elif remainder == 3:
+            results["imaginary"] -= 1
+    r = results["real"]
+    im = results["imaginary"]
+    output = []
+    if r != 0: output.append(f"{r}")
+    if im != 0: output.append(f"{im}i")
+    return " + ".join(output) if output else "0"
+
+# ---------- Z4 Cross Correlation (Shift 0 Only) ----------
+def z4_cross_correlation_shift0(seq1, seq2):
+    diff = [(int(a) - int(b)) % 4 for a, b in zip(seq1, seq2)]
+    result = simplify_complex_powers(diff)
+    cleaned = result.replace('i', 'j').replace(' ', '').replace('+-', '-').replace('--', '+')
+    magnitude = abs(complex(cleaned))
+    return [(0, result, magnitude)], magnitude
+
+# ---------- Auto Correlation ----------
+def auto_correlation(sequences, mode):
+    results = []
+    for idx, seq in enumerate(sequences):
+        results.append(f"\nSequence {idx + 1}: {seq}")
+        if mode == "binary":
+            n = len(seq)
+            for shift in range(1, n):
+                shifted = circular_shift(seq, shift)
+                corr = binary_correlation(seq, shifted)
+                results.append(f"Shift {shift} → {corr}")
+        else:  # z4 auto
+            powers = [int(d) for d in seq]
+            result = simplify_complex_powers(powers)
+            cleaned = result.replace('i', 'j').replace(' ', '').replace('+-', '-').replace('--', '+')
+            magnitude = abs(complex(cleaned))
+            results.append(f"Auto-correlation → {result} | magnitude={magnitude}")
+            results.append(f"Peak auto-correlation magnitude: {magnitude}")
+    return results
+
+# ---------- Cross Correlation ----------
+def cross_correlation(sequences, mode):
+    results = []
+    for (i, seq1), (j, seq2) in itertools.combinations(enumerate(sequences), 2):
+        results.append(f"\nSequence {i + 1} vs Sequence {j + 1}")
+        if mode == "binary":
+            n = len(seq1)
+            peak_corr = None
+            for shift in range(n):
+                shifted_seq2 = circular_shift(seq2, shift)
+                corr = binary_correlation(seq1, shifted_seq2)
+                if peak_corr is None or abs(corr) > abs(peak_corr):
+                    peak_corr = corr
+                results.append(f"Shift {shift} → {corr}")
+            results.append(f"Peak cross-correlation magnitude: {abs(peak_corr)}")
+        else:  # z4 modified cross, shift 0 only
+            z4_results, peak_mag = z4_cross_correlation_shift0(seq1, seq2)
+            for shift, res, mag in z4_results:
+                results.append(f"Shift {shift} → {res} | magnitude={mag}")
+            results.append(f"Peak cross-correlation magnitude: {peak_mag}")
+    return results
+
+# -------------------- MAIN --------------------
+def main():
+    # ---- Step 1: Read sequences ----
+    sequences = read_sequences(input_file)
+    print(f"Read {len(sequences)} sequences of length {len(sequences[0])}.")
+
+    # ---- Step 2: Detect type ----
+    mode = detect_type(sequences)
+    print(f"Detected sequence type: {mode}")
+
+    # ---- Step 3: Compute correlations ----
+    output_lines = []
+    output_lines.append(f"Detected sequence type: {mode}\n")
+    output_lines.append("AUTO CORRELATION")
+    output_lines.extend(auto_correlation(sequences, mode))
+    output_lines.append("\nCROSS CORRELATION")
+    output_lines.extend(cross_correlation(sequences, mode))
+
+    # ---- Step 4: Write results ----
+    with open(output_file, 'w', encoding='utf-8') as f:
+        for line in output_lines:
+            f.write(line + "\n")
+
+    print(f"\nResults saved to {output_file}")
+
+if __name__ == "__main__":
+    main()

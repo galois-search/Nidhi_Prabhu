@@ -1,0 +1,103 @@
+import re
+import networkx as nx
+import os
+
+file_path = r"D:\Dileep\NIDHI_V02\correlation_output.txt"
+out_path = r"D:\Dileep\NIDHI_V02\op.txt"
+
+if not os.path.exists(file_path):
+    print(f"ERROR: File not found at {file_path}")
+    exit()
+
+pairs = {}
+auto_corr = {}
+sequences = set()
+
+print("Reading file and parsing data...")
+
+with open(file_path, "r") as f:
+    current_pair = None
+    current_seq = None
+
+    for line in f:
+        line = line.strip()
+        if not line: continue
+
+        # 1. Capture Sequence IDs for Cross-Correlation
+        # Matches: "Sequence 1 vs Sequence 2"
+        pair_match = re.search(r"Sequence\s+(\d+)\s+vs\s+Sequence\s+(\d+)", line, re.I)
+        if pair_match:
+            current_pair = (int(pair_match.group(1)), int(pair_match.group(2)))
+            sequences.update(current_pair)
+            continue
+
+        # 2. Capture Single Sequence IDs for Auto-Correlation
+        # Matches: "Sequence 1:"
+        single_match = re.search(r"^Sequence\s+(\d+):", line, re.I)
+        if single_match:
+            current_seq = int(single_match.group(1))
+            sequences.add(current_seq)
+            continue
+
+        # 3. Capture Magnitude (Works for both Auto and Cross)
+        mag_match = re.search(r"magnitude[:\s]+([0-9.]+)", line, re.I)
+        if mag_match:
+            val = float(mag_match.group(1))
+            # If we just saw a pair, it's a cross-correlation value
+            if current_pair:
+                pairs[current_pair] = val
+                current_pair = None
+                # If we just saw a single sequence, it's an auto-correlation (PSL) value
+            elif current_seq is not None:
+                auto_corr[current_seq] = val
+                current_seq = None
+
+# --- Diagnostics ---
+print(f"Data Loaded: {len(sequences)} sequences")
+print(f"PSL values found: {len(auto_corr)}")
+print(f"Cross-pairs found: {len(pairs)}")
+
+if len(auto_corr) == 0:
+    print("\nERROR: No PSL magnitudes found! Check if your file says 'magnitude: [value]'")
+    exit()
+
+# Show the user what was actually found so they can pick a good threshold
+min_val = min(auto_corr.values())
+max_val = max(auto_corr.values())
+print(f"\nYour actual PSL values range from: {min_val:.2f} to {max_val:.2f}")
+
+try:
+    auto_threshold = float(input(f"Enter MAX PSL threshold (Try {int(min_val) + 1}): "))
+    cross_threshold = float(input("Enter MAX CROSS threshold: "))
+except ValueError:
+    exit()
+
+# Filter
+valid_nodes = [s for s in sequences if auto_corr.get(s, 9999) <= auto_threshold]
+print(f"Nodes passing PSL threshold: {len(valid_nodes)} / {len(sequences)}")
+
+if not valid_nodes:
+    print("Zero nodes passed. Threshold too low.")
+    exit()
+
+# Graph
+G = nx.Graph()
+G.add_nodes_from(valid_nodes)
+for (a, b), mag in pairs.items():
+    if a in valid_nodes and b in valid_nodes:
+        if mag <= cross_threshold:
+            G.add_edge(a, b)
+
+print(f"Graph built with {G.number_of_edges()} edges.")
+
+# Cliques
+max_cliques = list(nx.find_cliques(G))
+if not max_cliques:
+    print("No cliques found.")
+else:
+    max_cliques.sort(key=len, reverse=True)
+    with open(out_path, "w") as f:
+        for c in max_cliques:
+            c.sort()
+            f.write("{" + ",".join(map(str, c)) + "}-" + str(len(c)) + "\n")
+    print(f"Saved to: {out_path}")
